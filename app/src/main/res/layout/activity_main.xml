@@ -24,5 +24,7 @@
         android:layout_height="wrap_content"
         android:text="@string/textView_caption"
         android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/imageButton"
+        android:layout_centerHorizontal="true"
         android:id="@+id/textView" />
 </RelativeLayout>
