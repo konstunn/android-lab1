@@ -23,5 +23,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/textView_caption"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/textView" />
 </RelativeLayout>
