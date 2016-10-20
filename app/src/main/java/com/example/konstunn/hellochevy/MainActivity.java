@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView mHelloTextView;
+    private TextView mInfoTextView;
     private EditText mNameEditText;
 
     @Override
@@ -16,16 +16,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // вы должны были запомнить идентификатор
-        mHelloTextView = (TextView)findViewById(R.id.textView);
+        mInfoTextView = (TextView)findViewById(R.id.textView);
         mNameEditText = (EditText) findViewById(R.id.editText);
     }
 
     public void onClick(View view) {
         if (mNameEditText.getText().length() == 0) {
-            mHelloTextView.setText("Hello Chevy!");
+            mInfoTextView.setText("Hello Chevy!");
         } else {
-            mHelloTextView.setText("Hello, " + mNameEditText.getText());
+            mInfoTextView.setText("Hello, " + mNameEditText.getText());
         }
     }
 }
