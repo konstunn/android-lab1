@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Hello Chevy</string>
-    <string name="textView_caption">Hello, Chevy!</string>
+    <string name="textView_caption">Hello, World!</string>
 </resources>
