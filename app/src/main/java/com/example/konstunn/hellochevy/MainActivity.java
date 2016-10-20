@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         if (mNameEditText.getText().length() == 0) {
             mHelloTextView.setText("Hello Chevy!");
         } else {
-            mHelloTextView.setText("Привет, " + mNameEditText.getText());
+            mHelloTextView.setText("Hello, " + mNameEditText.getText());
         }
     }
 }

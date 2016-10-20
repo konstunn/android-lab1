@@ -34,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText"
-        android:hint="Введите имя авто"
+        android:hint="Input car name"
         android:layout_above="@+id/imageButton"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
