@@ -46,4 +46,12 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/greetButton"
         android:onClick="onClick" />
+
+    <Button
+        android:text="Count Chevies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/greetButton"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cheviesCountButton" />
 </RelativeLayout>
