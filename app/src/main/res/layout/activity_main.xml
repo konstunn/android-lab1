@@ -12,15 +12,6 @@
     tools:context="com.example.konstunn.hellochevy.MainActivity"
     android:background="@color/background_color">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/camaro128"
-        android:id="@+id/imageButton"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="onClick" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,23 +26,40 @@
         android:layout_height="wrap_content"
         android:id="@+id/editText"
         android:hint="Input car name"
-        android:layout_above="@+id/imageButton"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:text="Greet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
         android:id="@+id/greetButton"
-        android:onClick="onClick" />
+        android:onClick="onClick"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/camaro128"
+        android:id="@+id/imageButton"
+        android:onClick="onClick"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:text="Count Chevies"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/cheviesCountButton"
         android:layout_below="@+id/greetButton"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/cheviesCountButton" />
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Count Mustangs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mustangsCountButton"
+        android:layout_below="@+id/cheviesCountButton"
+        android:layout_alignEnd="@+id/imageButton" />
 </RelativeLayout>
