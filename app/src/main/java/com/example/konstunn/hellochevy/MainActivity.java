@@ -27,16 +27,16 @@ public class MainActivity extends AppCompatActivity {
         mCheviesCountButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mInfoTextView.setText("I've counted " + ++mCheviesCount + "Chevies");
+                mInfoTextView.setText("I've counted " + ++mCheviesCount + " Chevies");
             }
         });
     }
 
     public void onClick(View view) {
         if (mNameEditText.getText().length() == 0) {
-            mInfoTextView.setText("Hello Chevy!");
+            mInfoTextView.setText("Hello, Chevy!");
         } else {
-            mInfoTextView.setText("Hello, " + mNameEditText.getText());
+            mInfoTextView.setText("Hello, " + mNameEditText.getText() + "!");
         }
     }
 }
